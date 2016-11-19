@@ -24,6 +24,7 @@ namespace WebApplication2.Controllers
         [HttpPost]
         public ActionResult Student(StudentModel obj)
         {
+            ViewBag.Output = "The Student is: " + obj.Name + " from Class :" + obj.Class + " accounted.";
             return View();
         }
     }
