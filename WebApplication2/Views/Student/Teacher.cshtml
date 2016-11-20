@@ -1,19 +1,18 @@
-﻿@model WebApplication2.Models.StudentModel
+﻿@model WebApplication2.Models.TeacherModel
 
 @{
-    ViewBag.Title = "Enter Student Details";
+    ViewBag.Title = "Teacher";
 }
 
-<h2>Student</h2>
+<h2>Teacher</h2>
 
-
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">     
+
+    <div class="form-horizontal">
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        
+
         <div class="form-group">
             @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -32,10 +31,10 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="DO EET" class="btn btn-default" />
+                <input type="submit" value="DO EET" class="btn btn-default" />
             </div>
             <div class="col-md-offset-2 col-md-10 text-success">
-                @ViewBag.Output
+                @ViewBag.Blerb
             </div>
         </div>
     </div>

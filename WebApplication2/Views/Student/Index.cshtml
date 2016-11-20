@@ -5,5 +5,30 @@
 
 <h2>Index</h2>
 <p>Derek's new homepage</p>
-<a href="Student/Student.cshtml">Student form</a>
+
+<div>
+    @Html.ActionLink("Student Form", "Student")
+</div>
+<div>
+    @Html.ActionLink("Teacher Form", "Teacher")
+</div>
+
+<h2>Static List</h2>
+<div>
+    <ul>
+        <li>Someone</li>
+        <li>Anyone</li>
+        <li>Everyone</li>
+        <li>No one</li>
+    </ul>
+</div>
+<br/><br/>
+
+@model string
+<h2>Soon to be dynamically-populated List</h2>
+<div>
+    <ul>
+        <li>@Model</li>
+    </ul>
+</div>
 
