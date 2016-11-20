@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using WebApplication2.Models;                           //
+﻿using System.Web.Mvc;
+using WebApplication2.Models;                           
 
 namespace WebApplication2.Controllers
 {
@@ -22,10 +18,6 @@ namespace WebApplication2.Controllers
             return View();
         }
 
-        public ActionResult Teacher()
-        {
-            return View();
-        }
 
         [HttpPost]
         public ActionResult Student(StudentModel obj)
