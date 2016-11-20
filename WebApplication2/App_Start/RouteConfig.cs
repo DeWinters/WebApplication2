@@ -16,8 +16,27 @@ namespace WebApplication2
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Student", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "Student",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Student", action = "Student", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "Teacher",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Teacher", action = "Teacher", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "Dynamic",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Dynamic", action = "Dynamic", id = UrlParameter.Optional }
+            );
+
         }
     }
 }

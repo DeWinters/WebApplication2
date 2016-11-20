@@ -1,15 +1,15 @@
 ﻿using System.Web.Mvc;
-using WebApplication2.Models;                           
+using WebApplication2.Models;                   //                 
 
 namespace WebApplication2.Controllers
 {
     public class TeacherController : Controller
     {
 
-        public ActionResult Index()
-        {
-            return View();
-        }
+//        public ActionResult Index()
+//        {
+//            return View();
+//        }
 
         public ActionResult Teacher()
         {

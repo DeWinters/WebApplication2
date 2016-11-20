@@ -6,11 +6,11 @@ namespace WebApplication2.Controllers
     public class StudentController : Controller
     {
         // GET: Student
-        public ActionResult Index()
-        {
-           // var name = "Hey folks!";
-            return View();
-        }
+//        public ActionResult Index()
+ //       {
+ //          // var name = "Hey folks!";
+//            return View();
+//        }
 
         public ActionResult Student()
         {
@@ -26,11 +26,5 @@ namespace WebApplication2.Controllers
             return View();
         }
 
-        [HttpPost]
-        public ActionResult Teacher(TeacherModel obj)
-        {
-            ViewBag.Blerb = "The Teacher is: " + obj.Name + " from Class :" + obj.Class + " accounted.";
-            return View();
-        }
     }
 }
